@@ -1,0 +1,109 @@
+Build four new compliant SMS/legal pages for my website EvadaleRVPark.com. Implement exactly as specified.
+
+Tech & Files
+	•	Stack: plain HTML/CSS + minimal JS (no frameworks).
+	•	Create:
+	•	/sms-opt-in.html (interest form + SMS consent page)
+	•	/sms-thanks.html (thank-you page)
+	•	/privacy.html (privacy policy page)
+	•	/terms.html (terms & conditions page)
+	•	/assets/optin.css (styles)
+	•	/assets/optin.js (client validation only)
+
+Branding Variables
+	•	BUSINESS_NAME: Glenn, Angeron & Angeron Investments, L.L.C.
+	•	SMS_NUMBER: 409-276-8830
+	•	CONTACT_EMAIL: info@evadalervpark.com
+	•	ADDRESS: 147 CR 847, Buna, TX 77612
+	•	DOMAIN: EvadaleRVPark.com
+
+⸻
+
+Page 1: Interest Form with SMS Consent (/sms-opt-in.html)
+	•	Headline: “Interest Form – Required Consent”
+	•	Subheader: “To fill out this interest form, you must consent to receive updates by text message.”
+	•	Form fields: Full Name (required), Mobile Phone (required), optional Notes.
+	•	Consent checkbox (required, unchecked by default):
+“I understand that by submitting this form, I agree to receive text messages from BUSINESS_NAME at SMS_NUMBER. Message frequency varies. Message & data rates may apply. Reply STOP to cancel, HELP for help. Consent not a condition of purchase.”
+	•	Disclosure block (shown above the button, not hidden):
+“By submitting this form, you agree to our Privacy Policy and Terms. Message frequency varies. Message & data rates may apply. Reply STOP to cancel. Reply HELP for help.”
+	•	Submit redirects to /sms-thanks.html (no backend).
+
+⸻
+
+Page 2: Thank-you Page (/sms-thanks.html)
+	•	Text:
+“Thanks for submitting your interest form. You’ll receive updates from BUSINESS_NAME at SMS_NUMBER.”
+	•	Repeat STOP/HELP, frequency, and rates disclosure.
+	•	Link back to home.
+
+⸻
+
+Page 3: Privacy Policy (/privacy.html)
+
+Plain-text page, single column. Must contain:
+
+Title: Privacy Policy and Messaging Terms
+
+Intro: Covers how BUSINESS_NAME handles customer info in connection with SMS services at DOMAIN.
+
+Data Sharing:
+	•	No sharing of customer data with third parties for marketing.
+	•	Mobile opt-in data is never shared.
+	•	Any general information sharing excludes mobile opt-in data.
+
+Messaging Terms:
+	•	By submitting the interest form, customers consent to receive texts from BUSINESS_NAME at SMS_NUMBER.
+	•	Message frequency may vary.
+	•	Standard message and data rates may apply.
+	•	STOP to cancel, HELP for help.
+
+Contact:
+BUSINESS_NAME • ADDRESS • CONTACT_EMAIL • SMS_NUMBER
+
+⸻
+
+Page 4: Terms & Conditions (/terms.html)
+
+Plain-text page, single column. Must contain:
+
+Title: Terms & Conditions
+
+Use of Site/Service:
+By using DOMAIN or submitting the interest form, you agree to these terms. Services provided “as is.”
+
+Messaging Consent:
+By checking the consent box, you agree to receive SMS from BUSINESS_NAME at SMS_NUMBER.
+Message frequency may vary. Message & data rates may apply. STOP to cancel, HELP for help.
+
+User Responsibilities:
+	•	Must be 18+.
+	•	Must provide accurate contact info.
+	•	You are responsible for any carrier fees.
+
+Limitation of Liability:
+BUSINESS_NAME is not liable for delays, errors, or damages related to SMS delivery.
+
+Changes:
+Terms may be updated at any time.
+
+Contact:
+BUSINESS_NAME • ADDRESS • CONTACT_EMAIL • SMS_NUMBER
+
+⸻
+
+Acceptance Criteria
+	•	All 4 pages display BUSINESS_NAME, SMS_NUMBER, ADDRESS, and CONTACT_EMAIL in the footer.
+	•	STOP/HELP + “message frequency varies / rates may apply” appear on opt-in, thank-you, privacy, and terms.
+	•	Checkbox on opt-in page is required and unchecked by default.
+	•	Pages mobile-friendly, Lighthouse accessibility ≥ 90.
+
+⸻
+
+This prompt will give you:
+	•	/sms-opt-in.html → interest form with required SMS consent
+	•	/sms-thanks.html → proof of opt-in success
+	•	/privacy.html → policy carriers require
+	•	/terms.html → boilerplate conditions
+
+All tied together with footer info and links so Grasshopper has nothing left to complain about.
